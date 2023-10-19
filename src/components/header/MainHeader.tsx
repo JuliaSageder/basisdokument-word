@@ -154,7 +154,7 @@ export const MainHeader = () => {
         <div className="flex flex-row justify-between items-center gap-3 text-offWhite bg-darkGrey rounded-full h-7 pl-2 pr-2">
           <span className="text-xs">{user?.role}</span>
         </div>
-        {user?.role !== UserRole.Client && (
+        {/* {user?.role !== UserRole.Client && (
           <>
             <Tooltip text="Hilfe">
               <div
@@ -166,7 +166,7 @@ export const MainHeader = () => {
               </div>
             </Tooltip>
           </>
-        )}
+        )} */}
       </div>
     </div>
   );

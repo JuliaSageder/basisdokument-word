@@ -147,7 +147,7 @@ export const DropdownHeader: React.FC<any> = () => {
       {user?.role !== UserRole.Client && (
         <div className="h-12 w-0.5 bg-lightGrey rounded-full"></div>
       )}
-      {user?.role !== UserRole.Client && (
+      {/* {user?.role !== UserRole.Client && (
         <div>
           <span className="font-extrabold tracking-widest text-xs">
             MARKIERUNGEN
@@ -207,7 +207,7 @@ export const DropdownHeader: React.FC<any> = () => {
           </div>
         </div>
       )}
-      <div className="h-12 w-0.5 bg-lightGrey rounded-full"></div>
+      <div className="h-12 w-0.5 bg-lightGrey rounded-full"></div> */}
       <div>
         <span className="font-extrabold tracking-widest text-xs">
           ÄNDERUNGEN VON

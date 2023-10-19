@@ -27,7 +27,7 @@ const sidebars: ISidebar[] = [
     ),
     icon: <ListNumbers size={20} />,
   },
-  {
+  /*{
     name: SidebarState.Notes,
     jsxElem: <SidebarNotes key={SidebarState.Notes.toString()}></SidebarNotes>,
     icon: <Notepad size={20} />,
@@ -52,7 +52,7 @@ const sidebars: ISidebar[] = [
         key={SidebarState.Evidences.toString()}></SidebarEvidences>
     ),
     icon: <Paperclip size={20} />,
-  },
+  },*/
 ];
 
 interface ISidebarContext {
