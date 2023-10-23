@@ -133,7 +133,7 @@ export const SectionTitle: React.FC<SectionTitleProps> = ({
                     isOld,
                 }
               )}></input>
-            {(role === user?.role || user?.role === UserRole.Judge) &&
+            {/* {(role === user?.role || user?.role === UserRole.Judge) &&
               !isOld && (
                 <Tooltip text="Vorschläge" className="justify-end mx-2">
                   <div
@@ -147,7 +147,7 @@ export const SectionTitle: React.FC<SectionTitleProps> = ({
                     <Signpost size={16}></Signpost>
                   </div>
                 </Tooltip>
-              )}
+              )} */}
           </div>
         ) : (
           <h2
@@ -175,7 +175,7 @@ export const SectionTitle: React.FC<SectionTitleProps> = ({
               }
             }}>
             {title}
-            {(role === user?.role || user?.role === UserRole.Judge) &&
+            {/* {(role === user?.role || user?.role === UserRole.Judge) &&
               !isOld && (
                 <Tooltip text="Vorschläge" className="justify-end mx-2">
                   <div
@@ -189,7 +189,7 @@ export const SectionTitle: React.FC<SectionTitleProps> = ({
                     <Signpost size={16}></Signpost>
                   </div>
                 </Tooltip>
-              )}
+              )} */}
           </h2>
         )}
         <div className="relative">

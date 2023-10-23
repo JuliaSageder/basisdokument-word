@@ -49,7 +49,7 @@ export const MainHeader = () => {
       {/* actions on the left side */}
       <div className="flex flex-row gap-4 items-center">
         <DocumentButton />
-        <div
+        {/* <div
           className="select-none flex flex-row justify-center items-center gap-1 bg-offWhite hover:bg-lightGrey rounded-full h-7 pl-2 pr-2 cursor-pointer"
           onClick={() => {
             setShowDropdownHeader(!showDropdownHeader);
@@ -60,9 +60,9 @@ export const MainHeader = () => {
           ) : (
             <CaretDown size={12} className="text-darkGrey" weight="bold" />
           )}
-        </div>
+        </div> */}
         {/* <span className="font-extralight text-sm"></span> */}
-        {user?.role !== UserRole.Client ? (
+        {/* {user?.role !== UserRole.Client ? (
           <div className="flex flex-row justify-between items-center gap-3 bg-offWhite rounded-full h-7 pl-2 pr-2">
             <span className="text-xs">AZ. </span>
             {caseIdInEditMode ? (
@@ -108,7 +108,7 @@ export const MainHeader = () => {
           <div className="flex flex-row justify-between items-center gap-3 bg-offWhite rounded-full h-7 pl-2 pr-2">
             <span className="text-xs">AZ. {caseId}</span>
           </div>
-        )}
+        )} */}
       </div>
       {/* searchbar */}
       <div className="flex flex-row gap-2 justify-center items-center w-full max-w-[300px] relative">

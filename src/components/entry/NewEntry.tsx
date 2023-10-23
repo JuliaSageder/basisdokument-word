@@ -205,11 +205,11 @@ export const NewEntry: React.FC<NewEntryProps> = ({
                 setAuthorName(e.target.value);
               }}
               showEditButton
-              editButtonContent={
+              /* editButtonContent={
                 <Tooltip asChild text="Name bearbeiten">
                   <Pencil />
                 </Tooltip>
-              }
+              } */
               editButtonProps={{
                 className: cx("bg-transparent flex items-center"),
               }}

@@ -146,13 +146,13 @@ export const Auth: React.FC<AuthProps> = ({ setIsAuthenticated }) => {
   // It is still possible to access the onboarding via the ?-icon in the header.
   // The onboarding is also not shown with 'mandantendomain'
   const checkOnboardingShownBefore = () => {
-    if (
+    /* if (
       Cookies.get("onboarding") === undefined &&
       usage !== UsageMode.Readonly
     ) {
       Cookies.set("onboarding", "true");
       setIsOnboardingVisible(true);
-    }
+    } */
   };
 
   const isValidUsageMode = () => {
@@ -526,7 +526,7 @@ export const Auth: React.FC<AuthProps> = ({ setIsAuthenticated }) => {
             </div>
           </div>
         )}
-        {usage === UsageMode.Create ? (
+        {/* {usage === UsageMode.Create ? (
           <div>
             <p className="font-light">Aktenzeichen dieses Basisdokuments: </p>
             <div className="flex flex-row w-auto mt-4 gap-4">
@@ -539,7 +539,7 @@ export const Auth: React.FC<AuthProps> = ({ setIsAuthenticated }) => {
               />
             </div>
           </div>
-        ) : null}
+        ) : null} */}
         {role && (usage === UsageMode.Open || usage === UsageMode.Readonly) ? (
           <div className="flex flex-col gap-4">
             <div>

@@ -94,7 +94,7 @@ export const SidebarSorting = () => {
     <div className="flex flex-col gap-3 h-[calc(100vh-56px)]">
       <div className="flex flex-row justify-between pt-4 px-4">
         <div className="font-bold text-darkGrey text-lg">Gliederung</div>
-        <div className="content-center">
+        {/* <div className="content-center">
           <div>
             {user?.role !== UserRole.Client && (
               <SortingSelector
@@ -103,7 +103,7 @@ export const SidebarSorting = () => {
               />
             )}
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="text-darkGrey opacity-40 text-sm px-4">
         {selectedSorting === Sorting.Privat ? (

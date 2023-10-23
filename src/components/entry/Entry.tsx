@@ -448,11 +448,11 @@ export const Entry: React.FC<EntryProps> = ({
                             setAuthorName(e.target.value);
                           }}
                           showEditButton
-                          editButtonContent={
+                          /* editButtonContent={
                             <Tooltip asChild text="Name bearbeiten">
                               <Pencil />
                             </Tooltip>
-                          }
+                          } */
                           editButtonProps={{
                             className: cx("bg-transparent flex items-center"),
                           }}
@@ -468,7 +468,7 @@ export const Entry: React.FC<EntryProps> = ({
                   </div>
                   {!shownInPopup && user?.role !== UserRole.Client && (
                     <div className="flex gap-2">
-                      <Tooltip
+                      {/* <Tooltip
                         text={
                           isBookmarked ? (
                             <span>
@@ -491,7 +491,7 @@ export const Entry: React.FC<EntryProps> = ({
                         <Action onClick={addNote} isPlaintiff={isPlaintiff}>
                           <Notepad size={20} />
                         </Action>
-                      </Tooltip>
+                      </Tooltip> */}
                       {(isJudge || (entry.role === viewedBy && !isOld)) && (
                         <div ref={menuRef} className="flex relative space-y-2">
                           <Tooltip text="Mehr Optionen">
@@ -515,7 +515,7 @@ export const Entry: React.FC<EntryProps> = ({
                           </Tooltip>
                           {isMenuOpen ? (
                             <ul className="absolute right-0 top-full p-2 bg-white text-darkGrey rounded-xl min-w-[250px] shadow-lg z-50">
-                              {isJudge && (
+                              {/* {isJudge && (
                                 <li
                                   tabIndex={0}
                                   onClick={addHint}
@@ -523,7 +523,7 @@ export const Entry: React.FC<EntryProps> = ({
                                   <Scales size={20} />
                                   Hinweis hinzufügen
                                 </li>
-                              )}
+                              )} */}
                               {!isOld && (
                                 <>
                                   <li
