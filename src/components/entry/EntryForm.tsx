@@ -159,7 +159,7 @@ export const EntryForm: React.FC<EntryBodyProps> = ({
               : []
           }
         />
-        <div className="flex border-t border-lightGrey rounded-b-lg px-3 py-2 items-center gap-2 justify-between">
+        {/* <div className="flex border-t border-lightGrey rounded-b-lg px-3 py-2 items-center gap-2 justify-between">
           {entryEvidences && entryEvidences.length <= 0 ? (
             <div
               className="flex flex-col gap-2 items-center cursor-pointer"
@@ -222,7 +222,7 @@ export const EntryForm: React.FC<EntryBodyProps> = ({
             size="sm"
             bgColor="bg-offWhite hover:bg-lightGrey"
             textColor="font-bold text-darkGrey"></Button>
-        </div>
+        </div> */}
         <div className="flex justify-end p-3 pt-2 gap-2 border-t border-lightGrey">
           <Button
             icon={<X size={20} />}
@@ -256,14 +256,14 @@ export const EntryForm: React.FC<EntryBodyProps> = ({
           </Button>
         </div>
       </div>
-      <EvidencesPopup
+      {/* <EvidencesPopup
         entryId={entryId}
         isVisible={evidencePopupVisible}
         setIsVisible={setEvidencePopupVisible}
         isPlaintiff={isPlaintiff}
         evidences={entryEvidences}
         backupEvidences={backupEvidences}
-        setEvidences={setEntryEvidences}></EvidencesPopup>
+        setEvidences={setEntryEvidences}></EvidencesPopup> */}
       <ImageViewerPopup
         isVisible={imagePopupVisible}
         filedata={imagePopupData}

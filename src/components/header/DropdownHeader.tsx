@@ -33,7 +33,7 @@ export const DropdownHeader: React.FC<any> = () => {
 
   return (
     <div className="flex flex-row gap-4 p-2 pl-8 pr-8 bg-white items-center">
-      <div>
+      {/* <div>
         <span className="font-extrabold tracking-widest text-xs">
           DARSTELLUNG
         </span>
@@ -146,8 +146,8 @@ export const DropdownHeader: React.FC<any> = () => {
       </div>
       {user?.role !== UserRole.Client && (
         <div className="h-12 w-0.5 bg-lightGrey rounded-full"></div>
-      )}
-      {/* {user?.role !== UserRole.Client && (
+      )} */}
+      {user?.role !== UserRole.Client && (
         <div>
           <span className="font-extrabold tracking-widest text-xs">
             MARKIERUNGEN
@@ -207,7 +207,7 @@ export const DropdownHeader: React.FC<any> = () => {
           </div>
         </div>
       )}
-      <div className="h-12 w-0.5 bg-lightGrey rounded-full"></div> */}
+      {/* <div className="h-12 w-0.5 bg-lightGrey rounded-full"></div>
       <div>
         <span className="font-extrabold tracking-widest text-xs">
           ÄNDERUNGEN VON
@@ -225,7 +225,7 @@ export const DropdownHeader: React.FC<any> = () => {
           />
           <VersionSelector />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

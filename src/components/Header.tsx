@@ -9,7 +9,7 @@ export const Header = () => {
       {/* main part of the header */}
       <MainHeader />
       {/* fold-out part of the header */}
-      {/* {showDropdownHeader ? <DropdownHeader /> : null} */}
+      {showDropdownHeader ? <DropdownHeader /> : null}
     </header>
   );
 };
